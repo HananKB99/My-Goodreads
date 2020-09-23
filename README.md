@@ -1,2 +1,2 @@
 # My-Goodreads
-Recreate the landing page for goodreads.com wep site
+Recreating the landing page for goodreads.com wep site
