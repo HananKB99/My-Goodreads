@@ -1,120 +1,167 @@
-
-nav,
-header,
-footer{
-    display: block;
+* {
+  box-sizing: border-box;
+/*	background: #F4F1EA;*/
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+/*  height: 300px;  Should be removed. Only for demonstration */
+}
+
+.column3 {
+  float: left;
+/*  width: 30%;*/
+  padding: 10px;
+	    width: 280px;
+/*  height: 300px;  Should be removed. Only for demonstration */
+}
 body{
-	background: #F4F1EA;
-    line-height: 1;
-
- 
-}
-/*********************** nav *********************/
-
-nav{
 /*
+	margin-left: 40px;
+	margin-right: 40px;
+*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+	background-image:url(shot222.png);
+	background-size:100%;
+	margin-left: 80px;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+	background-image:url(shot222.png);
+	background-size:100%;
+}
+
+/*********************************** nav ********************************/
+h4{
+	color: blue;
+}
+nav{
     width: 100%;
     margin: 0;
     border: 20px;
-*/
-	    height: 65px;
-    padding-top: 10px;
-	border-bottom: 1px solid  #e6e6e6;
-/*	    box-shadow: 0 1px 2px rgba(0,0,0,0.15);*/
+	height: 65px;
+/*    padding-top: 10px;*/
+/*		border-bottom: 5px solid red; */
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
-
-nav ul{
+	
+nav div{
     background-color: #F4F1EA;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
-        
 }
-li{
-	    margin: 2px;
+
+nav div.navClass-right{
+	margin: 2px;
 	display: inline-block;
 }
 
-ul.navClass img {
+div.navClass  div.navClass-right{
+	margin: 12px;
+}
+
+div.navClass img {
 	margin: 3px 13px 0px 5px;
-    float: left;
+	float: left;
 	width: 180px;
+
 }
 
-ul.navClass #signin{
-
-   background-color: #382110;
-   color: white;
-   border-radius: 4px;
-   width:70px; 
+div.navClass #signin{
+	background-color: #382110;
+	color: white;
+	border-radius: 4px;
+	border: 1px solid #382110;
+	width:70px; 
 	height: 30px;
-	
-
+	display: inline-block;
 }
 
-ul.navClass li {
+/*
+div.navClass li {
     list-style: none;
-    float: left;
-
-    
+    float: left;   
 }
+*/
 
-li input{
+nav div.navClass div.navClass-right  input.userinfo{
 	width: 120px;
     padding: 5px;
+	margin: 2px;
 }
 
-ul.navClass li.navClass-right{
-
+div.navClass div.navClass-right div.right{
+	margin: 2px;
 }
 
 div#leftdiv{
-	  float: right;
+	float: right;
 	display:flex;
 }
+
 #remember_me{
 	flex-direction: none;
 }
 
-ul div.navClass label.gray{
-color: red
+div.navClass label.gray{
+	color: gray;
 }
 
-/*
-
-ul.navClass li a{
-    margin: 0;
-    display: block;
-    text-decoration: none;
-    min-height: 16px;font size
-    padding: 14px ;
-    text-transform: uppercase;
+#remember_me{
+	padding: none;
 }
-*/
-/*
- ul.navClass li a:hover {
-    
-    background-color: #0080ff;
-    color:white;it dident work ,,,at the end it just work~..~
+/*	****************************  mine  *************************** */
+#column2{
+	float: right;
+	margin-right:66px;
 }
-*/
-
-ul.navClass li.drop-list{
-    display: block;
+	
+body label{
+	font-size: 10px;
+	box-sizing: 30px;
+	color: gray;
+	line-height: 12px;
+	display: inline-block;
 }
-
-label{
-	    vertical-align: middle;
-}
-/******************** first div *******************/
-#meet{
-margin-left: 50px;
-margin-top: 50px;
+ body button{
+	background-color: #fdd05f;
+	color: black;
+	border-radius: 4px;
+	border: 1px solid #fdd05f;
+	width:70px; 
+	height: 30px;
+	margin-right: 5px;
 }
 
+form input{
+	margin: 2px;
+	background-color: white;
+}
+/**********************secound div*************************/
 
+#add{
+	margin: 0;
+}
 
+p, h6{
+	    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
 
+p{
+	font-size: 14px;
+}
+
+h6{
+	font-size: 18px;
+}
 

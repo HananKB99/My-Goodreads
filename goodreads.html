@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Goodreads | Meet your next favorite book. </title>
-	 <link rel="stylesheet" href="goodreads.css">
-	 <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="first_boot.css">
-	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="column.css">
 </head>
 <body>
 	 <nav>
-            <ul class="navClass" >
-                <li > <img src="logo.png" class="navClass-left"></li>
-				<div id="leftdiv" class="navClass-right">
-					
-<!--						<div>-->
-							<li class="navClass-right"> <input type="email" id="email" placeholder="Email address"></li>
-							<br><br><br>
-							<input type="checkbox" id="remember_me">
-							<label for="remember_me" class="gray">Remember me</label>
-<!--
-						</div>
-						<div>
--->
-					<li class="navClass-right"> <input type="password" id="password" placeholder="password"></li>
-					<label  class="gray">Forgot it</label>
-					<li class="navClass-right"><button type="button" id="signin" >Sign in</button></li>
-<!--						</div>-->
-					
-              
+		<div class="navClass" >
+			<img src="logo.png" class="navClass-left" id="navlogo">
+				<div id="leftdiv" class="navClass-right">	
+					<div class="right">
+						<input type="email" id="email" class="userinfo" placeholder="Email address"><br>
+						<input type="checkbox"  id="remember_me">
+						<label for="remember_me" class="gray">Remember me</label>
+					</div>
+					<div class="right">
+						<input type="password" id="password" class="userinfo" placeholder="password"><br>
+						<label  class="gray">Forgot it</label>
+					</div>
+					<div class="left">
+						<button type="button" id="signin" class="sign" >Sign in</button>
+					</div>	
 				</div>
-				
-
-<!--				class="navClass-right"
-
--->
-               
-             
-            
-            </ul>
-		 
+            </div>
 	</nav>
-	<div id="firstdiv">
-		<img src="meet%20your.png" id="meet">
-		<img src="book.png" >
+
+
+<div class="row" style="background:url(shot2222.png)">
+  <div class="column" id="column2" >
+   <h4>New here? Create a free account!</h4>
+   <form>
+	   <input type="text" placeholder="Name"><br>
+	   <input type="email" placeholder="Email address"><br>
+	   <input type="password" placeholder="password"><br>
+	   <button type="submit" class="sign" id="signup">Sign up</button>
+	   <label>By clicking “Sign up” I agree to the<br>Goodreads Terms of Service and confirm<br>that I am at least 13 years old</label>
+   </form>
+  </div>
+</div>
+	<img src="books101.png">
+<div>
+	<div class="row2">
+  		<div class="column3" >
+			<label>Deciding what to read next?</label>
+			<p>
+You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</p>
+  		</div>
+  		<div class="column" >
+			<label> What are your friends reading?</label>
+			<p>
+
+Chances are your friends are discussing their favorite (and least favorite) books on Goodreads.
+
+</p>
+		</div>
+		<div class="column" >
+			
+			<img src="add.png" id="add">
+		</div>
+</div>
 	
-	</div>
-	
-	
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="s ha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+</div>	
+
 </body>
-</html>  
+</html>
