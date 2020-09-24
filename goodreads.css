@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
-/*	background: #F4F1EA;*/
+
+	margin: 0px
+	
+}
+
+html{
+	
 }
 
 /* Create two equal columns that floats next to each other */
@@ -16,14 +22,13 @@
 /*  width: 30%;*/
   padding-left: 25px;
 	    width: 280px;
+	align-items: flex-end;
+		margin-top: 10px;
 	
 /*  height: 300px;  Should be removed. Only for demonstration */
 }
 body{
-/*
-	margin-left: 40px;
-	margin-right: 40px;
-*/
+margin: 0px;
 	  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
@@ -53,16 +58,17 @@ body{
 
 nav{
     width: 100%;
-    margin: 0;
+    margin: 0px;
     border: 20px;
 	height: 65px;
 /*    padding-top: 10px;*/
-/*		border-bottom: 5px solid red; */
-	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+		border-bottom: 1px solid black; 
+	box-shadow:  rgba(0,0,0,0.15);
 }
 	
 nav div{
-    background-color: #F4F1EA;
+    background-color: rgb(230,230,215);
+/*    background-color: #F4F1EA;*/
     overflow: hidden;
 }
 
@@ -148,11 +154,12 @@ body label{
 	border: 1px solid #fdd05f;
 	width:70px; 
 	height: 30px;
+	 margin-bottom: 50px;
 /*
 	margin-right: 5px;
 	 margin-bottom: 25px;
 */
-	 margin: 1px 3px 5px 5px;
+	 margin: 1px 3px 0px 5px;
 }
 
 form input{
@@ -181,6 +188,7 @@ p{
 
 h4{
 	font-weight: normal;
+	margin: 14px 14px 14px 0px;
 }
 h6{
 	font-size: 18px;
@@ -188,3 +196,58 @@ h6{
 	font-weight: normal;
 }
 
+#password{
+	margin-bottom: 3px
+}
+
+/****************** black ***********************/
+
+div#black{
+	background-color:#181818;;
+	box-sizing: 26px;
+/*	padding: 1px;*/
+	margin-bottom: 0;
+	margin-top: 5px;
+	 width: 280px;
+    height: 50px;
+   border-radius: 4px;
+}
+
+li img{
+  height: 26px;
+    width: 26px;
+	list-style-type: none;
+	    text-align: center;
+	  overflow: hidden;
+	
+
+
+}
+/*
+ a:hover{
+	color: red;
+}
+*/
+
+
+ul li{
+	display: inline-block;
+	padding: 2px;
+	margin-top: 3px;
+}
+
+span{
+	color: white;
+	margin-top: 0px;
+	    text-align: justify;
+	line-height: 18px;
+	margin: 0px;
+	display: inline-block;
+	font-size: 14px;
+
+}
+
+
+a:hover {
+	text-decoration: underline;
+}
